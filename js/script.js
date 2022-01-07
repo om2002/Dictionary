@@ -14,7 +14,7 @@ function inputListener() {
     let url = 'https://api.dictionaryapi.dev/api/v2/entries/en_US/';
     // console.log(textValue)
     url = url + textValue;
-    console.log(url);
+//     console.log(url);
 
 
     const xhr = new XMLHttpRequest();
@@ -25,7 +25,7 @@ function inputListener() {
         if (this.status === 200) {
 
             let obj = JSON.parse(this.responseText);
-            console.log(obj);
+//             console.log(obj);
 
             html = "";
             let Meaning = obj[0].meanings[0].definitions;
